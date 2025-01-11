@@ -26,9 +26,9 @@ const SignIn = async (props: {
   const { callbackUrl } = await searchParams;
   const session = await auth();
 
-  // if (session) {
-  //   redirect(callbackUrl || "/");
-  // }
+  if (session) {
+    redirect(callbackUrl || "/");
+  }
 
   return (
     <div className="w-full max-w-md mx-auto">
