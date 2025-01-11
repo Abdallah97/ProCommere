@@ -27,7 +27,7 @@ const CredentialsSignInForm = () => {
   };
 
   return (
-    <form action={action} method="post">
+    <form action={action}>
       <input type="hidden" name="callbackUrl" value={callbackUrl} />
       <div className="space-y-6">
         <div>
